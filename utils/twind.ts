@@ -28,6 +28,7 @@ export const config: Configuration = {
                         opacity: "0",
                         transform: "translate(calc(-100vw + 75px), 0)",
                     },
+                    "81%": { transform: "translate(50vw, 0)" },
                 },
                 "across-small-screen": {
                     "0%": { opacity: "0" },
@@ -36,6 +37,7 @@ export const config: Configuration = {
                         opacity: "0",
                         transform: "translate(calc(-100vw + 40px), 0)",
                     },
+                    "51%": { transform: "translate(50vw, 0)" },
                 },
             },
         },
