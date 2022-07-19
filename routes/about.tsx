@@ -1,11 +1,12 @@
 /** @jsx h */
 import { h } from "preact";
+import GeneralLayout from "../components/layout/general_layout.tsx";
 
 export default function AboutPage() {
     return (
-        <main>
+        <GeneralLayout activePath="/about">
             <h1>About</h1>
             <p>This is the about page.</p>
-        </main>
+        </GeneralLayout>
     );
 }
