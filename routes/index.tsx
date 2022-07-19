@@ -15,11 +15,11 @@ const Head = () => (
 export default function Home() {
     return (
         <GeneralLayout activePath="/" head={<Head />}>
-            <div className={tw`pt-10 px-10 flex flex-col items-center text-center`}>
+            <main className={tw`pt-10 px-10 flex flex-col items-center text-center`}>
                 <h1 className={tw`sm:text-[5rem] text-[3rem] font-thin uppercase font-josefin`}>Zackary Santana</h1>
                 <p class={tw`my-6 uppercase font-josefin font-bold tracking-[0.125em]`}>A creative full-stack web developer</p>
                 <TechCarousel />
-            </div>
+            </main>
         </GeneralLayout>
     );
 }
