@@ -51,6 +51,7 @@ export default function TechCarousel() {
             <CarouselImage to="https://git-scm.com/" num={12} icon={<GitIcon className={IconClassName()} />} />
             <CarouselImage to="https://fly.io/" num={13} icon={<FlyIcon className={""} />} />
             <CarouselImage to="https://nodejs.org/en/" num={14} icon={<NodejsIcon className={IconClassName()} />} />
+            {/* PWA */}
         </div>
     );
 }

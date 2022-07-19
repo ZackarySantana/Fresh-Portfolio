@@ -10,7 +10,7 @@ export default function App(props: AppProps) {
             <Head>
                 <meta
                     name="keywords"
-                    content="New Grad, Developer, Coder, Programmer, Programming, Languages, Software, Zackary Santana"
+                    content="New Grad, Portfolio, Projects, Web Development, Node.js, React.js, Remix.js, CSS, Developer, Coder, Programmer, Programming, Languages, Software, Zackary Santana"
                 />
 
                 {/* Other Meta Tags */}
