@@ -12,6 +12,9 @@ export const config: Configuration = {
                 cadet: "#5D737E",
                 onyx: "#3F4045",
             },
+            fontFamily: {
+                josefin: '"Josefin Sans",sans-serif',
+            },
         },
     },
 };
