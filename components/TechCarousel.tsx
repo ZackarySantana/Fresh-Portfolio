@@ -1,5 +1,5 @@
 /** @jsx h */
-import { h } from "preact";
+import { h, VNode } from "preact";
 import { tw } from "@twind";
 import ReactIcon from "./icons/tech/react.tsx";
 import PreactIcon from "./icons/tech/preact.tsx";
@@ -31,36 +31,25 @@ const AnchorStyle = (c: number) => (`animation-delay: -${c * 2}s`);
 export default function TechCarousel() {
     return (
         <div class={tw`flex w-screen relative`}>
-            <ExternalLink to="https://reactjs.org/" className={AnchorClassName()} style={AnchorStyle(0)}>
-                <ReactIcon className={IconClassName()} />
-            </ExternalLink>
-            <ExternalLink to="https://preactjs.com/" className={AnchorClassName()} style={AnchorStyle(1)}>
-                <PreactIcon className={IconClassName()} />
-            </ExternalLink>
-            <ExternalLink to="https://www.mongodb.com/" className={AnchorClassName()} style={AnchorStyle(2)}>
-                <MongoDBIcon className={IconClassName()} />
-            </ExternalLink>
-            <ExternalLink to="https://git-scm.com/" className={AnchorClassName()} style={AnchorStyle(3)}>
-                <GitIcon className={IconClassName()} />
-            </ExternalLink>
-            <ExternalLink to="https://remix.run/" className={AnchorClassName()} style={AnchorStyle(4)}>
-                <RemixIcon className={IconClassName()} />
-            </ExternalLink>
-            <ExternalLink to="https://www.docker.com/" className={AnchorClassName()} style={AnchorStyle(5)}>
-                <DockerIcon className={IconClassName()} />
-            </ExternalLink>
-            <ExternalLink to="https://prometheus.io/" className={AnchorClassName()} style={AnchorStyle(6)}>
-                <PrometheusIcon className={IconClassName()} />
-            </ExternalLink>
-            <ExternalLink to="https://www.java.com/" className={AnchorClassName()} style={AnchorStyle(7)}>
-                <JavaIcon className={IconClassName()} />
-            </ExternalLink>
-            <ExternalLink to="https://grafana.com/" className={AnchorClassName()} style={AnchorStyle(8)}>
-                <GrafanaIcon className={IconClassName()} />
-            </ExternalLink>
-            <ExternalLink to="https://firebase.google.com/" className={AnchorClassName()} style={AnchorStyle(9)}>
-                <FirebaseIcon className={IconClassName()} />
-            </ExternalLink>
+            <CarouselImage to="https://reactjs.org/" num={0} icon={<ReactIcon className={IconClassName()} />} />
+            <CarouselImage to="https://preactjs.com/" num={1} icon={<PreactIcon className={IconClassName()} />} />
+            <CarouselImage to="https://www.mongodb.com/" num={2} icon={<MongoDBIcon className={IconClassName()} />} />
+            <CarouselImage to="https://git-scm.com/" num={3} icon={<GitIcon className={IconClassName()} />} />
+            <CarouselImage to="https://remix.run/" num={4} icon={<RemixIcon className={IconClassName()} />} />
+            <CarouselImage to="https://www.docker.com/" num={5} icon={<DockerIcon className={IconClassName()} />} />
+            <CarouselImage to="https://prometheus.io/" num={6} icon={<PrometheusIcon className={IconClassName()} />} />
+            <CarouselImage to="https://www.java.com/" num={7} icon={<JavaIcon className={IconClassName()} />} />
+            <CarouselImage to="https://grafana.com/" num={8} icon={<GrafanaIcon className={IconClassName()} />} />
+            <CarouselImage to="https://firebase.google.com/" num={9} icon={<FirebaseIcon className={IconClassName()} />} />
+            {/* TO ADD: Tailwind Twind Fly */}
         </div>
+    );
+}
+
+function CarouselImage(props: { to: string; icon: VNode; num: number; }) {
+    return (
+        <ExternalLink to={props.to} className={AnchorClassName()} style={AnchorStyle(props.num)}>
+            {props.icon}
+        </ExternalLink>
     );
 }
