@@ -8,7 +8,7 @@ const Head = () => (
     <head>
         <title>Home - Zackary's Portfolio</title>
         <meta type="description" content="Zackary Santana's custom portfolio!" />
-        <link rel="stylesheet" id="google-fonts-css" href="//fonts.googleapis.com/css?family=Josefin+Sans%3A700%2C400%2C100%7CTitillium+Web%3A400%2C700%2C400italic%2C700italic" type="text/css" media="all"></link>
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Josefin+Sans%3A700%2C400%2C100%7CTitillium+Web%3A400%2C700%2C400italic%2C700italic" type="text/css" media="all" />
     </head>
 );
 
