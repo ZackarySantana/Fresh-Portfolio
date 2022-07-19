@@ -1,7 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import Counter from "../islands/Counter.tsx";
+import TechCarousel from "../islands/TechCarousel.tsx";
 import GeneralLayout from "../components/layout/general_layout.tsx";
 
 const Head = () => (
@@ -15,10 +15,10 @@ const Head = () => (
 export default function Home() {
     return (
         <GeneralLayout activePath="/" head={<Head />}>
-            <div className={tw`pt-10 px-10 flex flex-col items-center`}>
-                <h1 className={tw`text-[5rem] font-thin uppercase font-josefin`}>Zackary Santana</h1>
+            <div className={tw`pt-10 px-10 flex flex-col items-center text-center`}>
+                <h1 className={tw`sm:text-[5rem] text-[3rem] font-thin uppercase font-josefin`}>Zackary Santana</h1>
                 <p class={tw`my-6 uppercase font-josefin font-bold tracking-[0.125em]`}>A creative full-stack web developer</p>
-                <Counter start={3} />
+                <TechCarousel />
             </div>
         </GeneralLayout>
     );
