@@ -30,7 +30,7 @@ const AnchorStyle = (c: number) => (`animation-delay: -${c * 2}s`);
 
 export default function TechCarousel() {
     return (
-        <div class={tw`flex w-screen relative`}>
+        <div class={tw`flex w-screen relative h-[40px] sm:h-[75px]`}>
             <CarouselImage to="https://reactjs.org/" num={0} icon={<ReactIcon className={IconClassName()} />} />
             <CarouselImage to="https://preactjs.com/" num={1} icon={<PreactIcon className={IconClassName()} />} />
             <CarouselImage to="https://www.mongodb.com/" num={2} icon={<MongoDBIcon className={IconClassName()} />} />
