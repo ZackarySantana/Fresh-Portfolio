@@ -5,7 +5,7 @@ export default function FirebaseIcon(props: { className?: string; style?: string
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 202" className={props.className} style={props.style}>
             <defs>
-                <linearGradient x1="-3.48177083%" y1="17.0266727%" x2="100.833333%" y2="92.8868033%" id="linearGradient-1">
+                <linearGradient x1="-3.48177083%" y1="17.0266727%" x2="100.833333%" y2="92.8868033%" id="firebase-gradient">
                     <stop stop-color="#FFFFFF" stop-opacity="0.1" offset="0%" />
                     <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%" />
                 </linearGradient>
@@ -22,7 +22,7 @@ export default function FirebaseIcon(props: { className?: string; style?: string
                                         <mask id="mask-3" fill="white">
                                             <use xlinkHref="#path-2" />
                                         </mask>
-                                        <use id="_Path_5" fill="url(#linearGradient-1)" fill-rule="nonzero" xlinkHref="#path-2" />
+                                        <use id="_Path_5" fill="url(#firebase-gradient-1)" fill-rule="nonzero" xlinkHref="#path-2" />
                                         <g id="_Group_2" mask="url(#mask-3)">
                                             <g transform="translate(-6.041511, -0.151675)">
                                                 <g id="_Group_3" stroke-width="1" fill="none" fill-rule="evenodd">

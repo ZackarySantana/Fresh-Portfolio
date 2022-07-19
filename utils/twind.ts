@@ -16,9 +16,10 @@ export const config: Configuration = {
                 josefin: '"Josefin Sans",sans-serif',
             },
             animation: {
-                "across-screen": "across-screen 20s linear infinite",
+                "across-screen": "across-screen 30s linear infinite",
                 "across-small-screen":
-                    "across-small-screen 20s linear infinite",
+                    "across-small-screen 30s linear infinite",
+                twind: "twind 3s linear infinite",
             },
             keyframes: {
                 "across-screen": {
@@ -40,6 +41,36 @@ export const config: Configuration = {
                         pointerEvents: "unset",
                     },
                     "51%": { pointerEvents: "none" },
+                },
+                twind: {
+                    "0%": {
+                        transform:
+                            "translate(154.652417px, 63.770002px) rotate(0deg)",
+                        animationTimingFunction:
+                            "cubic- bezier(0.420000, 0, 1, 1)",
+                    },
+                    "23.333333%": {
+                        transform:
+                            "translate(154.652417px, 63.770002px) rotate(7.962948deg)",
+                    },
+                    "43.333333%": {
+                        transform:
+                            "translate(154.652417px, 63.770002px) rotate(4.164075deg)",
+                        animationTimingFunction:
+                            "cubic-bezier(0, 0, 0.580000, 1)",
+                    },
+                    "63.333333%": {
+                        transform:
+                            "translate(154.652417px, 63.770002px) rotate(12.610805deg)",
+                    },
+                    "73.333333%": {
+                        transform:
+                            "translate(154.652417px, 63.770002px) rotate(13.321761deg)",
+                    },
+                    "100%": {
+                        transform:
+                            "translate(154.652417px, 63.770002px) rotate(0.218094deg)",
+                    },
                 },
             },
         },
