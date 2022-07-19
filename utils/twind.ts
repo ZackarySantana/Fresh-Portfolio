@@ -26,7 +26,7 @@ export const config: Configuration = {
                     "40%": { opacity: "1" },
                     "80%": {
                         opacity: "0",
-                        transform: "translate(calc(-100vw + 100px), 0)",
+                        transform: "translate(calc(-100vw + 75px), 0)",
                     },
                 },
                 "across-small-screen": {
@@ -34,7 +34,7 @@ export const config: Configuration = {
                     "25%": { opacity: "1" },
                     "50%": {
                         opacity: "0",
-                        transform: "translate(calc(-100vw + 100px), 0)",
+                        transform: "translate(calc(-100vw + 40px), 0)",
                     },
                 },
             },
