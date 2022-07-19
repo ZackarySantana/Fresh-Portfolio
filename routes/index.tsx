@@ -1,7 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import TechCarousel from "../islands/TechCarousel.tsx";
+import TechCarousel from "../components/TechCarousel.tsx";
 import GeneralLayout from "../components/layout/general_layout.tsx";
 
 const Head = () => (
