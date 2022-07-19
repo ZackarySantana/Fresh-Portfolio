@@ -31,34 +31,34 @@ const AnchorStyle = (c: number) => (`animation-delay: -${c * 2}s`);
 export default function TechCarousel() {
     return (
         <div class={tw`flex w-screen relative`}>
-            <ExternalLink to="/test" className={AnchorClassName()} style={AnchorStyle(0)}>
+            <ExternalLink to="https://reactjs.org/" className={AnchorClassName()} style={AnchorStyle(0)}>
                 <ReactIcon className={IconClassName()} />
             </ExternalLink>
-            <ExternalLink to="/test" className={AnchorClassName()} style={AnchorStyle(1)}>
+            <ExternalLink to="https://preactjs.com/" className={AnchorClassName()} style={AnchorStyle(1)}>
                 <PreactIcon className={IconClassName()} />
             </ExternalLink>
-            <ExternalLink to="/test" className={AnchorClassName()} style={AnchorStyle(2)}>
+            <ExternalLink to="https://www.mongodb.com/" className={AnchorClassName()} style={AnchorStyle(2)}>
                 <MongoDBIcon className={IconClassName()} />
             </ExternalLink>
-            <ExternalLink to="/test" className={AnchorClassName()} style={AnchorStyle(3)}>
+            <ExternalLink to="https://git-scm.com/" className={AnchorClassName()} style={AnchorStyle(3)}>
                 <GitIcon className={IconClassName()} />
             </ExternalLink>
-            <ExternalLink to="/test" className={AnchorClassName()} style={AnchorStyle(4)}>
+            <ExternalLink to="https://remix.run/" className={AnchorClassName()} style={AnchorStyle(4)}>
                 <RemixIcon className={IconClassName()} />
             </ExternalLink>
-            <ExternalLink to="/test" className={AnchorClassName()} style={AnchorStyle(5)}>
+            <ExternalLink to="https://www.docker.com/" className={AnchorClassName()} style={AnchorStyle(5)}>
                 <DockerIcon className={IconClassName()} />
             </ExternalLink>
-            <ExternalLink to="/test" className={AnchorClassName()} style={AnchorStyle(6)}>
+            <ExternalLink to="https://prometheus.io/" className={AnchorClassName()} style={AnchorStyle(6)}>
                 <PrometheusIcon className={IconClassName()} />
             </ExternalLink>
-            <ExternalLink to="/test" className={AnchorClassName()} style={AnchorStyle(7)}>
+            <ExternalLink to="https://www.java.com/" className={AnchorClassName()} style={AnchorStyle(7)}>
                 <JavaIcon className={IconClassName()} />
             </ExternalLink>
-            <ExternalLink to="/test" className={AnchorClassName()} style={AnchorStyle(8)}>
+            <ExternalLink to="https://grafana.com/" className={AnchorClassName()} style={AnchorStyle(8)}>
                 <GrafanaIcon className={IconClassName()} />
             </ExternalLink>
-            <ExternalLink to="/test" className={AnchorClassName()} style={AnchorStyle(9)}>
+            <ExternalLink to="https://firebase.google.com/" className={AnchorClassName()} style={AnchorStyle(9)}>
                 <FirebaseIcon className={IconClassName()} />
             </ExternalLink>
         </div>
