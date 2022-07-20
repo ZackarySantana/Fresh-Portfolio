@@ -7,7 +7,7 @@ export default function Navbar(props: { activePath: string; }) {
         <nav className={tw`fixed w-full flex flex-col items-center pt-2 text-gray-200 bg-gray-800 top-0`}>
             <ul className={tw`m-0 list-none`}>
                 {GetLinks().map(l => (
-                    <Link to={l[0]} active={props.activePath.toLowerCase() === l[0]} target={NewTab().includes(l[1])}>{l[1]}</Link>
+                    <NavLink to={l[0]} active={props.activePath.toLowerCase() === l[0]} target={NewTab().includes(l[1])}>{l[1]}</NavLink>
                 ))}
             </ul>
         </nav>
@@ -28,7 +28,7 @@ function NewTab() {
     return ["Linkedin", "Resume"];
 }
 
-function Link(props: { children: string; to: string; active: boolean; target?: boolean; }) {
+function NavLink(props: { children: string; to: string; active: boolean; target?: boolean; }) {
     return (
         <li className={tw`inline-block align-baseline`}>
             <a href={props.to} target={props.target ? "_blank" : ""} rel="noreferrer"

@@ -16,9 +16,9 @@ export default function AboutPage() {
         <GeneralLayout activePath="/404" head={<Head />}>
             <main className={tw`pt-10 px-10 flex flex-col items-center justify-center text-center h-[60vh]`}>
                 <h1 className={tw`sm:text-[5rem] text-[3rem] font-thin uppercase font-josefin`}>404</h1>
-                <p class={tw`my-6 font-josefin tracking-[0.125em]`}>There was no page found!
+                <p className={tw`my-6 font-josefin tracking-[0.125em]`}>There was no page found!
                     Click <a href="/" className={tw`text-blue-400`}>here</a> to go home</p>
             </main>
-        </GeneralLayout>
+        </GeneralLayout >
     );
 }

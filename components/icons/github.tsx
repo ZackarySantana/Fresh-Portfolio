@@ -1,6 +1,5 @@
 /** @jsx h */
 import { h } from "preact";
-import { CSSProperties } from "../../utils/twind.ts";
 
 export default function GitHubIcon(props: { className?: string; style?: string; }) {
     return (

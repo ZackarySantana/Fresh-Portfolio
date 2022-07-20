@@ -27,7 +27,7 @@ export const config: Configuration = {
                     "40%": { opacity: "1" },
                     "80%": {
                         opacity: "0",
-                        transform: "translate(calc(-100vw + 75px), 0)",
+                        transform: "translate(calc(-100vw + 7.5rem + 75px), 0)",
                         pointerEvents: "unset",
                     },
                     "81%": { pointerEvents: "none" },
@@ -37,7 +37,7 @@ export const config: Configuration = {
                     "25%": { opacity: "1" },
                     "50%": {
                         opacity: "0",
-                        transform: "translate(calc(-100vw + 40px), 0)",
+                        transform: "translate(calc(-100vw + 7.5rem + 40px), 0)",
                         pointerEvents: "unset",
                     },
                     "51%": { pointerEvents: "none" },
