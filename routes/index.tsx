@@ -22,7 +22,7 @@ export default function Home() {
                 <TechCarousel />
                 <div className={tw`sm:w-[30rem] mt-8 w-full`}>
                     <p>
-                        Interested in my work? Head over to my <Link to="/projects">my projects</Link> to find out more. I am a passionate developer that's
+                        Interested in my work? Head over to my <Link to="/projects">my projects</Link> to find out more. I am a passionate developer that's worked in many different languages and frameworks (the carousel above include some of my strengths but doesn't include everything!)
                     </p>
                 </div>
             </main>
