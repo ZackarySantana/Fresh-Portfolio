@@ -33,11 +33,14 @@ export const config: Configuration = {
                     "81%": { pointerEvents: "none" },
                 },
                 "across-small-screen": {
-                    "0%": { opacity: "0" },
+                    "0%": {
+                        opacity: "0",
+                        transform: "translate(calc(2.4rem), 0)",
+                    },
                     "25%": { opacity: "1" },
                     "50%": {
                         opacity: "0",
-                        transform: "translate(calc(-100vw + 7.5rem + 40px), 0)",
+                        transform: "translate(calc(-100vw + 4.8rem + 20px), 0)",
                         pointerEvents: "unset",
                     },
                     "51%": { pointerEvents: "none" },
