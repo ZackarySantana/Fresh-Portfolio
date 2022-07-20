@@ -4,6 +4,7 @@ import { tw } from "@twind";
 import TechCarousel from "../components/TechCarousel.tsx";
 import GeneralLayout from "../components/layout/general_layout.tsx";
 import Link from "../components/utils/link.tsx";
+import ExternalLink from "../components/utils/externallink.tsx";
 
 const Head = () => (
     <head>
@@ -22,7 +23,7 @@ export default function Home() {
                 <TechCarousel />
                 <div className={tw`sm:w-[30rem] mt-8 w-full`}>
                     <p>
-                        Interested in my work? Head over to my <Link to="/projects">my projects</Link> to find out more. I am a passionate developer that's worked in many different languages and frameworks (the carousel above include some of my strengths but doesn't include everything!)
+                        Interested in my work? Head over to my <Link to="/projects">my projects</Link> to find out more. I am a passionate developer that has worked with many different languages and frameworks (the carousel does not include everything that makes me great, check out my <ExternalLink to="/Zackary_Santana_Resume.pdf" className={tw`text-blue-400`}>resume</ExternalLink>)
                     </p>
                 </div>
             </main>
