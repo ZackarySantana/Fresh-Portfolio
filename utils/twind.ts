@@ -25,6 +25,7 @@ export const config: Configuration = {
                 "across-small-screen":
                     "across-small-screen 30s linear infinite",
                 twind: "twind 3s linear infinite",
+                rgb: "rgb 6s linear infinite",
             },
             keyframes: {
                 "across-screen": {
@@ -49,6 +50,11 @@ export const config: Configuration = {
                         pointerEvents: "unset",
                     },
                     "51%": { pointerEvents: "none" },
+                },
+                rgb: {
+                    "0%": { backgroundPosition: "0% 50%" },
+                    "50%": { backgroundPosition: "100% 50%" },
+                    "100%": { backgroundPosition: "0% 50%" },
                 },
                 twind: {
                     "0%": {
