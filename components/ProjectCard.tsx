@@ -2,11 +2,13 @@
 import { h, VNode } from "preact";
 import { tw } from "@twind";
 import { css } from "twind/css";
+import Image from "./utils/Image.tsx";
 
-export default function ProjectCard(props: { img: string; title: string; desc: VNode | string; techs: string; sub?: (VNode | string)[][]; special?: string; }) {
+export default function ProjectCard(props: { img: string; imgAlt: string; title: string; desc: VNode | string; techs: string; sub?: (VNode | string)[][]; special?: string; }) {
     return (
         <div className={tw`rounded-2xl bg-dark text-center shadow-2xl w-[250px] m-5 relative ${props.special ? (RGB() + " after:animate-rgb") : ""}`} style={"transform-style: preserve-3d;"}>
-            <img src={props.img} className={tw`rounded-tr-2xl rounded-tl-2xl w-full h-[150px]`} />
+            {/* <img src={props.img} className={tw`rounded-tr-2xl rounded-tl-2xl w-full h-[150px]`} /> */}
+            <Image src={props.img} srcAlt={props.imgAlt} alt={props.title} className={tw`rounded-tr-2xl rounded-tl-2xl w-full h-[150px]`} />
             <div className={tw`m-[25px] h-[150px]`} >
                 <span className={tw`text-sm-2 text-red-400`}>{props.techs}</span>
                 <h2 className={tw`mt-0 text-lg`}>{props.title}</h2>
