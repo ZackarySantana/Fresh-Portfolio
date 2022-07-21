@@ -100,8 +100,8 @@ function getProjects() {
             ],
         },
         {
-            img: "logo.svg",
-            imgAlt: "logo.svg",
+            img: "TileGame.webp",
+            imgAlt: "TileGame.png",
             title: "Tile Game",
             techs: "React, Redux, SASS",
             desc: "Did you ever play a tile matching game as a kid? This game is an animated online version of the childhood game! It's built using React and Redux.",
