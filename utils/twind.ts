@@ -13,6 +13,7 @@ export const config: Configuration = {
                 onyx: "#3F4045",
                 "onyx-400": "#515359",
                 dark: "#1d1d1d",
+                orange: "rgb(249 115 22);",
             },
             fontSize: {
                 "sm-2": ["0.8125rem", "1.125rem"],

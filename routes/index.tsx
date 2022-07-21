@@ -30,7 +30,7 @@ export default function Home() {
                 </div>
                 <div className={tw`flex flex-wrap justify-center p-5`}>
                     {getProjects().map(p => (
-                        <ProjectCard img={p.img} title={p.title} techs={p.techs} desc={p.desc} sub={p.sub} />
+                        <ProjectCard img={p.img} title={p.title} techs={p.techs} desc={p.desc} sub={p.sub} special={p.special} />
                     ))}
                 </div>
             </main>
@@ -42,7 +42,7 @@ function getProjects() {
     return [
         {
             img: "logo.svg",
-            title: "Space Frontier",
+            title: "Space Frontier FAKE",
             techs: "Java, JavaFX, FXML",
             desc: "Space Frontier is a side scrolling Java game. It has multiple worlds and progession for enemies and players.",
             sub: [
@@ -57,24 +57,74 @@ function getProjects() {
             techs: "Java, JavaFX, FXML",
             desc: "Space Frontier is a side scrolling Java game. It has multiple worlds and progession for enemies and players.",
             sub: [
-                [<>4<sup>m</sup></>, "read"],
-                ["32", "comments"],
+                [<ExternalLink to="https://github.com/ZackarySantana/SpaceFrontier" className={tw`text-blue-400`}>Source</ExternalLink>],
+                ["2400+", "lines"],
             ],
         },
         {
             img: "logo.svg",
-            title: "Space Frontier",
-            techs: "Java, JavaFX, FXML",
-            desc: "Space Frontier is a side scrolling Java game. It has multiple worlds and progession for enemies and players.",
+            title: "Todo",
+            techs: "Svelte, Firebase, Workbox",
+            desc: <>This todo app is a PWA (Progressive Web App) made in <span className={tw`text-orange`}>Svelte</span> using <span className={tw`text-orange`}>Firebase</span> for authentication. </>,
             sub: [
-                [<>4<sup>m</sup></>, "read"],
+                [<ExternalLink to="https://github.com/ZackarySantana/To-do" className={tw`text-blue-400`}>Source</ExternalLink>],
+                [<ExternalLink to="https://todo.zackaryjamessantana.com/" className={tw`text-blue-400`}>Demo</ExternalLink>],
+            ],
+            special: "true"
+        },
+        {
+            img: "logo.svg",
+            title: "Tile Game",
+            techs: "React, Redux, SASS",
+            desc: "Did you ever play a tile matching game as a kid? This game is an animated online version of the childhood game! It's built using React and Redux.",
+            sub: [
+                [<ExternalLink to="https://github.com/ZackarySantana/TileGame" className={tw`text-blue-400`}>Source</ExternalLink>],
+                [<ExternalLink to="TBA" className={tw`text-blue-400`}>Demo</ExternalLink>],
+            ],
+            special: "true"
+        },
+        {
+            img: "logo.svg",
+            title: "Animal Collector",
+            techs: "React, Redux, SASS",
+            desc: "Cookie Clicker is a very popular game, have you ever thought what Cookie Clicker might be if it was built with React and centered around animals?",
+            sub: [
+                [<ExternalLink to="https://github.com/ZackarySantana/AnimalCollector" className={tw`text-blue-400`}>Source</ExternalLink>],
+                [<ExternalLink to="TBA" className={tw`text-blue-400`}>Demo</ExternalLink>],
+            ],
+            special: "true"
+        },
+        {
+            img: "logo.svg",
+            title: "Selector",
+            techs: "Java, JavaFX, FXML",
+            desc: "A MVC custom system written with JavaFX. Using it, I made a To Do application as an example usage!",
+            sub: [
+                [<ExternalLink to="https://github.com/ZackarySantana/Selector_java" className={tw`text-blue-400`}>Source</ExternalLink>],
+                ["1700+", "lines"],
             ],
         },
         {
             img: "logo.svg",
-            title: "Space Frontier",
-            techs: "Java, JavaFX, FXML",
-            desc: "Space Frontier is a side scrolling Java game. It has multiple worlds and progession for enemies and players.",
-        }
+            title: "Portfolio",
+            techs: "Fresh, Preact, Twind, Fly",
+            desc: "This site is a responsive open-source web application made using Preact, Twind, and Fresh. ",
+            sub: [
+                [<ExternalLink to="https://github.com/ZackarySantana/Portfolio" className={tw`text-blue-400`}>Source</ExternalLink>],
+                ["1400+", "lines"],
+            ],
+            special: "true"
+        },
+        {
+            img: "logo.svg",
+            title: "UPE",
+            techs: "Remix, React, Express",
+            desc: "A site with a multi-user authentication system, metrics with Prometheus, visualization with Grafana, Prisma ORM for posts/comments, and more!",
+            sub: [
+                [<ExternalLink to="/" className={tw`text-blue-400`}>Production</ExternalLink>],
+                ["9500+", "lines"],
+            ],
+            special: "true"
+        },
     ];
 }

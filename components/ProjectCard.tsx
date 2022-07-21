@@ -3,9 +3,9 @@ import { h, VNode } from "preact";
 import { tw } from "@twind";
 import { css } from "twind/css";
 
-export default function ProjectCard(props: { img: string; title: string; desc: string; techs: string; sub?: (VNode | string)[][]; }) {
+export default function ProjectCard(props: { img: string; title: string; desc: VNode | string; techs: string; sub?: (VNode | string)[][]; special?: string; }) {
     return (
-        <div className={tw`rounded-2xl bg-dark text-center shadow-2xl w-[250px] m-5 relative ${RGB()} after:animate-rgb`} style={"transform-style: preserve-3d;"}>
+        <div className={tw`rounded-2xl bg-dark text-center shadow-2xl w-[250px] m-5 relative ${props.special ? (RGB() + " after:animate-rgb") : ""}`} style={"transform-style: preserve-3d;"}>
             <img src={props.img} className={tw`rounded-tr-2xl rounded-tl-2xl w-full h-[150px]`} />
             <div className={tw`m-[25px] h-[150px]`} >
                 <span className={tw`text-sm-2 text-red-400`}>{props.techs}</span>
@@ -15,27 +15,29 @@ export default function ProjectCard(props: { img: string; title: string; desc: s
             {props.sub?.length == 1 &&
                 <div className={tw`grid grid-cols-1 grid-rows-1`} >
                     {props.sub?.map(subInfo => (
-                        <SubInfo upper={subInfo[0]} lower={subInfo[1]} />
+                        subInfo.length == 2 ? <SubInfo upper={subInfo[0]} lower={subInfo[1]} />
+                            : <SubInfo upper={subInfo[0]} />
                     ))}
                 </div>
             }
             {props.sub?.length == 2 &&
                 <div className={tw`grid grid-cols-2 grid-rows-1`} >
                     {props.sub?.map(subInfo => (
-                        <SubInfo upper={subInfo[0]} lower={subInfo[1]} />
+                        subInfo.length == 2 ? <SubInfo upper={subInfo[0]} lower={subInfo[1]} />
+                            : <SubInfo upper={subInfo[0]} />
                     ))}
                 </div>
             }
             {props.sub?.length == 3 &&
                 <div className={tw`grid grid-cols-3 grid-rows-1`} >
                     {props.sub?.map(subInfo => (
-                        <SubInfo upper={subInfo[0]} lower={subInfo[1]} />
+                        subInfo.length == 2 ? <SubInfo upper={subInfo[0]} lower={subInfo[1]} />
+                            : <SubInfo upper={subInfo[0]} />
                     ))}
                 </div>
             }
             {(props.sub?.length ?? 0) == 0 &&
-                <div className={tw`h-[64px]`} >
-                </div>
+                <div className={tw`h-[64px]`} />
             }
         </div>
     );
@@ -61,20 +63,22 @@ function RGB() {
         inset: -3px;       
         border-radius: 16px;
         transform: translateZ(-1px);
-        filter: blur(8px);
+        filter: blur(4px);
     }
     `);
 }
 
-function SubInfo(props: { upper: VNode | string; lower: VNode | string; }) {
+function SubInfo(props: { upper: VNode | string; lower?: VNode | string; }) {
     return (
         <div class={tw`flex justify-center items-center flex-col p-2.5`}>
             <div className={tw`block text-lg`}>
                 {props.upper}
             </div>
-            <div className={tw`block text-xs`}>
-                {props.lower}
-            </div>
+            {props.lower &&
+                <div className={tw`block text-xs`}>
+                    {props.lower}
+                </div>
+            }
         </div>
     );
 }
