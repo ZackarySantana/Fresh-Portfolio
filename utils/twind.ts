@@ -11,6 +11,11 @@ export const config: Configuration = {
                 celeste: "#BAF2E9",
                 cadet: "#5D737E",
                 onyx: "#3F4045",
+                "onyx-400": "#515359",
+                dark: "#1d1d1d",
+            },
+            fontSize: {
+                "sm-2": ["0.8125rem", "1.125rem"],
             },
             fontFamily: {
                 josefin: '"Josefin Sans",sans-serif',

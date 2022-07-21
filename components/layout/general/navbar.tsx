@@ -4,7 +4,7 @@ import { tw } from "@twind";
 
 export default function Navbar(props: { activePath: string; }) {
     return (
-        <nav className={tw`fixed w-full flex flex-col items-center pt-2 text-gray-200 bg-gray-800 top-0`}>
+        <nav className={tw`fixed z-50 w-full flex flex-col items-center pt-2 text-gray-200 bg-gray-800 top-0`}>
             <ul className={tw`m-0 list-none`}>
                 {GetLinks().map(l => (
                     <NavLink to={l[0]} active={props.activePath.toLowerCase() === l[0]} target={NewTab().includes(l[1])}>{l[1]}</NavLink>

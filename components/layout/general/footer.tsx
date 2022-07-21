@@ -8,7 +8,7 @@ import LinkedinIcon from "../../icons/linkedin.tsx";
 
 export default function Footer() {
     return (
-        <footer className={tw`w-[80%] pt-20 mx-[10%]`}>
+        <footer className={tw`w-[80%] py-20 mx-[10%]`}>
             <hr className={tw`w-full`} />
             <div className={tw`w-full flex flex-col items-center`}>
                 <div className={tw`flex justify-evenly py-5 w-[200px]`}>
