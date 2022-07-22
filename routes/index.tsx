@@ -57,7 +57,7 @@ function getProjects() {
                 [<ExternalLink to="/" className={tw`text-blue-400`}>Production</ExternalLink>],
                 ["9500+", "lines"],
             ],
-            special: "true"
+            special: true
         },
         {
             img: "SpaceFrontier.webp",
@@ -70,7 +70,7 @@ function getProjects() {
                 [<ExternalLink to="https://videos.zackaryjamessantana.com/spacefrontier/" className={tw`text-blue-400`}>Demo</ExternalLink>],
                 ["2400+", "lines"],
             ],
-            special: "true"
+            special: true,
         },
         {
             img: "MiscProps.webp",
@@ -93,7 +93,7 @@ function getProjects() {
                 [<ExternalLink to="https://github.com/ZackarySantana/To-do" className={tw`text-blue-400`}>Source</ExternalLink>],
                 [<ExternalLink to="https://todo.zackaryjamessantana.com/" className={tw`text-blue-400`}>Demo</ExternalLink>],
             ],
-            special: "true"
+            special: true,
         },
         {
             img: "Selector.webp",
@@ -129,6 +129,7 @@ function getProjects() {
                 [<ExternalLink to="https://devpost.com/software/linkedhub" className={tw`text-blue-400`}>Devpost</ExternalLink>],
                 ["3000+", "lines"],
             ],
+            special: true,
         },
         {
             img: "Portfolio.webp",

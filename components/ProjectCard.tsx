@@ -4,7 +4,7 @@ import { tw } from "@twind";
 import { css } from "twind/css";
 import Image from "./utils/Image.tsx";
 
-export default function ProjectCard(props: { img: string; imgAlt: string; title: string; desc: VNode | string; techs: string; sub?: (VNode | string)[][]; special?: string; }) {
+export default function ProjectCard(props: { img: string; imgAlt: string; title: string; desc: VNode | string; techs: string; sub?: (VNode | string)[][]; special?: boolean; }) {
     return (
         <div className={tw`rounded-2xl bg-dark text-center shadow-2xl w-[250px] m-5 relative ${props.special ? (RGB() + " after:animate-rgb") : ""}`} style={"transform-style: preserve-3d;"}>
             {/* <img src={props.img} className={tw`rounded-tr-2xl rounded-tl-2xl w-full h-[150px]`} /> */}
