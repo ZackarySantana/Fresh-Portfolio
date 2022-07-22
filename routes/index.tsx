@@ -132,6 +132,17 @@ function getProjects() {
             special: true,
         },
         {
+            img: "UniBeat.webp",
+            imgAlt: "UniBeat.png",
+            title: "UniBeat",
+            techs: "Android, Firebase",
+            desc: "Unibeat allows users to select a music genre and explore new songs, with a tinder-like system for music preference.",
+            sub: [
+                [<ExternalLink to="https://github.com/qasp-Inc/uniBeat" className={tw`text-blue-400`}>Source</ExternalLink>],
+            ],
+            special: true,
+        },
+        {
             img: "Portfolio.webp",
             imgAlt: "Portfolio.png",
             title: "Portfolio",
