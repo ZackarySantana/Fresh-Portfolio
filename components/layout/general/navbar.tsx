@@ -17,8 +17,6 @@ export default function Navbar(props: { activePath: string; }) {
 function GetLinks() {
     return [
         ["/", "Home"],
-        ["/about", "About"],
-        ["/projects", "Projects"],
         ["https://www.linkedin.com/in/zackary-santana/", "Linkedin"],
         ["/Zackary_Santana_Resume.pdf", "Resume"],
     ];
