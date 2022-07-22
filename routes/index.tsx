@@ -34,12 +34,12 @@ export default function Home() {
                         <ProjectCard img={"projects/" + p.img} imgAlt={"projects/" + p.imgAlt} title={p.title} techs={p.techs} desc={p.desc} sub={p.sub} special={p.special} />
                     ))}
                 </div>
-                <h1 className={tw`text-[2rem]`}>Plugins</h1>
+                {/* <h1 className={tw`text-[2rem]`}>Plugins</h1>
                 <div className={tw`flex flex-wrap justify-center p-5`}>
                     {getProjects().map(p => (
                         <ProjectCard img={"projects/" + p.img} imgAlt={"projects/" + p.imgAlt} title={p.title} techs={p.techs} desc={p.desc} sub={p.sub} special={p.special} />
                     ))}
-                </div>
+                </div> */}
             </main>
         </GeneralLayout>
     );
@@ -140,7 +140,6 @@ function getProjects() {
             sub: [
                 [<ExternalLink to="https://github.com/qasp-Inc/uniBeat" className={tw`text-blue-400`}>Source</ExternalLink>],
             ],
-            special: true,
         },
         {
             img: "Portfolio.webp",
