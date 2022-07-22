@@ -4,7 +4,6 @@ export * from "twind";
 export const config: Configuration = {
     darkMode: "class",
     mode: "silent",
-
     theme: {
         extend: {
             colors: {

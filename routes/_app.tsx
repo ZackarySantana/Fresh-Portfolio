@@ -39,6 +39,11 @@ export default function App(props: AppProps) {
                     sizes="16x16"
                     href="/favicon-16x16.png"
                 />
+
+                <link
+                    rel="stylesheet"
+                    href="styles.css"
+                />
             </Head>
             <props.Component />
         </>
