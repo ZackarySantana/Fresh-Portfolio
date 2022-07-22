@@ -65,7 +65,7 @@ function getProjects() {
             techs: "Remix, React, Express",
             desc: "A site with a multi-user authentication system, metrics with Prometheus, visualization with Grafana, Prisma ORM for posts/comments, and more! Link TBA",
             sub: [
-                [<ExternalLink to="/" className={tw`text-blue-400`}>Production</ExternalLink>],
+                // [<ExternalLink to="/" className={tw`text-blue-400`}>Production</ExternalLink>],
                 ["9500+", "lines"],
             ],
             special: true

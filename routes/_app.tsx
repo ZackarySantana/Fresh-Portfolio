@@ -47,7 +47,7 @@ export default function App(props: AppProps) {
                 />
             </Head>
             <props.Component />
-            <Analytics />
+            {/* <Analytics /> */}
         </>
     );
 }
