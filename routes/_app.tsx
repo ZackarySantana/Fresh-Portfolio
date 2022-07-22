@@ -3,6 +3,7 @@
 import { Fragment, h } from "preact";
 import { Head } from "$fresh/runtime.ts";
 import { AppProps } from "$fresh/server.ts";
+import Analytics from "../islands/Analytics.tsx";
 
 export default function App(props: AppProps) {
     return (
@@ -46,6 +47,7 @@ export default function App(props: AppProps) {
                 />
             </Head>
             <props.Component />
+            <Analytics />
         </>
     );
 }
