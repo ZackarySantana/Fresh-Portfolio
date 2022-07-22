@@ -26,10 +26,11 @@ export default function Home() {
                 <TechCarousel />
                 <div className={tw`sm:w-[30rem] my-8 w-full  before:content-['hi']`}>
                     <p>
-                        Interested in my work? Head over to my <Link to="/projects">my projects</Link> to find out more. I am a passionate developer that has worked with many different languages and frameworks (the carousel does not include everything that makes me great, check out my <ExternalLink to="/Zackary_Santana_Resume.pdf" className={tw`text-blue-400`}>resume</ExternalLink>)
+                        Interested in my work? Head over to my <Link to="#projects">my projects</Link> to find out more. I am a passionate developer that has worked with many different languages and frameworks (the carousel does not include everything that makes me great, check out my <ExternalLink to="/Zackary_Santana_Resume.pdf" className={tw`text-blue-400`}>resume</ExternalLink>)
                     </p>
                 </div>
-                <h1 className={tw`text-[2rem]`}>Projects</h1>
+                <div id="projects"></div>
+                <h1 className={tw`text-[2rem] pt-[4rem]`}>Projects</h1>
 
                 {/* <label for="red-toggle" class={tw`inline-flex relative items-center mr-5 cursor-pointer`}>
                     <input type="checkbox" value="" id="red-toggle" class={tw`sr-only peer`} checked />
