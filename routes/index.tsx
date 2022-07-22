@@ -28,6 +28,13 @@ export default function Home() {
                         Interested in my work? Head over to my <Link to="/projects">my projects</Link> to find out more. I am a passionate developer that has worked with many different languages and frameworks (the carousel does not include everything that makes me great, check out my <ExternalLink to="/Zackary_Santana_Resume.pdf" className={tw`text-blue-400`}>resume</ExternalLink>)
                     </p>
                 </div>
+                <h1 className={tw`text-[2rem]`}>Projects</h1>
+                <div className={tw`flex flex-wrap justify-center p-5`}>
+                    {getProjects().map(p => (
+                        <ProjectCard img={"projects/" + p.img} imgAlt={"projects/" + p.imgAlt} title={p.title} techs={p.techs} desc={p.desc} sub={p.sub} special={p.special} />
+                    ))}
+                </div>
+                <h1 className={tw`text-[2rem]`}>Plugins</h1>
                 <div className={tw`flex flex-wrap justify-center p-5`}>
                     {getProjects().map(p => (
                         <ProjectCard img={"projects/" + p.img} imgAlt={"projects/" + p.imgAlt} title={p.title} techs={p.techs} desc={p.desc} sub={p.sub} special={p.special} />
@@ -102,23 +109,25 @@ function getProjects() {
         {
             img: "TileGame.webp",
             imgAlt: "TileGame.png",
-            title: "Tile Game",
+            title: "Tile Game and Animal Collector",
             techs: "React, Redux, SASS",
-            desc: "Did you ever play a tile matching game as a kid? This game is an animated online version of the childhood game! It's built using React and Redux.",
+            desc: "The childhood classic tile matching game and a cookie clicker clone, Animal collector, made with Redux and React.",
             sub: [
-                [<ExternalLink to="https://github.com/ZackarySantana/TileGame" className={tw`text-blue-400`}>Source</ExternalLink>],
-                [<ExternalLink to="TBA" className={tw`text-blue-400`}>Demo</ExternalLink>],
+                [<ExternalLink to="https://github.com/ZackarySantana/TileGame" className={tw`text-blue-400`}>Source</ExternalLink>, "Tile Game"],
+                [<ExternalLink to="https://github.com/ZackarySantana/AnimalCollector" className={tw`text-blue-400`}>Source</ExternalLink>, "Animal Collector"],
+
             ],
         },
         {
-            img: "logo.svg",
-            imgAlt: "logo.svg",
-            title: "Animal Collector",
-            techs: "React, Redux, SASS",
-            desc: "Cookie Clicker is a very popular game, have you ever thought what Cookie Clicker might be if it was built with React and centered around animals?",
+            img: "LinkedHub.webp",
+            imgAlt: "LinkedHub.png",
+            title: "LinkedHub",
+            techs: "JavaScript, Chrome Extension",
+            desc: <>1<sup>st</sup> place hackathon winner for Miami Hack Week @ Campus, adds GitHub section to LinkedIn!</>,
             sub: [
-                [<ExternalLink to="https://github.com/ZackarySantana/AnimalCollector" className={tw`text-blue-400`}>Source</ExternalLink>],
-                [<ExternalLink to="TBA" className={tw`text-blue-400`}>Demo</ExternalLink>],
+                [<ExternalLink to="https://github.com/ItsLaro/LinkedHub" className={tw`text-blue-400`}>Source</ExternalLink>],
+                [<ExternalLink to="https://devpost.com/software/linkedhub" className={tw`text-blue-400`}>Devpost</ExternalLink>],
+                ["3000+", "lines"],
             ],
         },
         {
@@ -131,7 +140,6 @@ function getProjects() {
                 [<ExternalLink to="https://github.com/ZackarySantana/Portfolio" className={tw`text-blue-400`}>Source</ExternalLink>],
                 ["1400+", "lines"],
             ],
-            special: "true"
         },
     ];
 }
