@@ -27,6 +27,7 @@ export const config: Configuration = {
                     "across-small-screen 30s linear infinite",
                 twind: "twind 3s linear infinite",
                 rgb: "rgb 6s linear infinite",
+                shake: "shake 0.5s",
             },
             keyframes: {
                 "across-screen": {
@@ -56,6 +57,13 @@ export const config: Configuration = {
                     "0%": { backgroundPosition: "0% 50%" },
                     "50%": { backgroundPosition: "100% 50%" },
                     "100%": { backgroundPosition: "0% 50%" },
+                },
+                shake: {
+                    "0%": { transform: "rotate(0deg);" },
+                    "25%": { transform: "rotate(10deg);" },
+                    "50%": { transform: "rotate(-10deg);" },
+                    "75%": { transform: "rotate(10deg);" },
+                    "100%": { transform: "rotate(0deg);" },
                 },
                 twind: {
                     "0%": {

@@ -13,13 +13,13 @@ export default function Footer() {
             <div className={tw`w-full flex flex-col items-center`}>
                 <div className={tw`flex justify-evenly py-5 w-[200px]`}>
                     <ExternalLink to="https://github.com/ZackarySantana">
-                        <GitHubIcon className={tw`w-[25px] h-[25px]`} />
+                        <GitHubIcon className={tw`w-[25px] h-[25px] hover:animate-shake`} />
                     </ExternalLink>
                     <ExternalLink to="mailto: zackzackyack@gmail.com">
-                        <EmailIcon className={tw`w-[25px] h-[25px]`} />
+                        <EmailIcon className={tw`w-[25px] h-[25px] hover:animate-shake`} />
                     </ExternalLink>
                     <ExternalLink to="https://www.linkedin.com/in/zackary-santana/">
-                        <LinkedinIcon className={tw`w-[25px] h-[25px]`} />
+                        <LinkedinIcon className={tw`w-[25px] h-[25px] hover:animate-shake`} />
                     </ExternalLink>
                 </div>
                 Made with ❤️ by Zackary Santana
