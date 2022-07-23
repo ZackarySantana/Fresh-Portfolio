@@ -43,7 +43,7 @@ export default function App(props: AppProps) {
 
                 <link
                     rel="stylesheet"
-                    href="styles.css"
+                    href="/styles.css"
                 />
             </Head>
             <props.Component />
