@@ -71,19 +71,6 @@ function getProjects() {
             special: true
         },
         {
-            img: "SpaceFrontier.webp",
-            imgAlt: "SpaceFrontier.png",
-            title: "Space Frontier",
-            techs: "Java, JavaFX, FXML",
-            desc: "Space Frontier is a side scrolling Java game. It has multiple worlds and progession for enemies and players.",
-            sub: [
-                [<ExternalLink to="https://github.com/ZackarySantana/SpaceFrontier" className={tw`text-blue-400`}>Source</ExternalLink>],
-                [<ExternalLink to="https://videos.zackaryjamessantana.com/spacefrontier/" className={tw`text-blue-400`}>Demo</ExternalLink>],
-                ["2400+", "lines"],
-            ],
-            special: true,
-        },
-        {
             img: "MiscProps.webp",
             imgAlt: "MiscProps.png",
             title: "Misc Props",
@@ -141,6 +128,18 @@ function getProjects() {
                 ["3000+", "lines"],
             ],
             special: true,
+        },
+        {
+            img: "SpaceFrontier.webp",
+            imgAlt: "SpaceFrontier.png",
+            title: "Space Frontier",
+            techs: "Java, JavaFX, FXML",
+            desc: "Space Frontier is a side scrolling Java game I made in 10th grade. It has multiple worlds and progession for enemies and players.",
+            sub: [
+                [<ExternalLink to="https://github.com/ZackarySantana/SpaceFrontier" className={tw`text-blue-400`}>Source</ExternalLink>],
+                [<ExternalLink to="https://videos.zackaryjamessantana.com/spacefrontier/" className={tw`text-blue-400`}>Demo</ExternalLink>],
+                ["2400+", "lines"],
+            ],
         },
         {
             img: "UniBeat.webp",
