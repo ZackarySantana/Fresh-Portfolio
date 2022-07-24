@@ -15,10 +15,11 @@ const Head = () => (
     <meta type="description" content="Zackary Santana's custom portfolio!" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans%3A700%2C400%2C100%7CTitillium+Web%3A400%2C700%2C400italic%2C700italic"
+      href="/josefin.css"
       type="text/css"
       media="all"
     />
+    {/* https://fonts.googleapis.com/css?family=Josefin+Sans%3A700%2C400%2C100%7CTitillium+Web%3A400%2C700%2C400italic%2C700italic */}
   </head>
 );
 
