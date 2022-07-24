@@ -1,9 +1,9 @@
 {
     "tasks": {
         "dev": "deno run -A --watch=static/,routes/ dev.ts",
-        "dev-latest": "deno run --import-map=./import_map_latest.json -A --watch=static/,routes/ dev.ts",
+        "dev-local": "deno run --import-map=./import_map_local.json -A --watch=static/,routes/ dev.ts",
         "deploy": "deno run -A main.ts",
-        "deploy-latest": "deno run --import-map=./import_map_latest.json -A main.ts"
+        "deploy-local": "deno run --import-map=./import_map_local.json -A main.ts"
     },
     "importMap": "./import_map.json"
 }
