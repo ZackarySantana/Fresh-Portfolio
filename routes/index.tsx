@@ -2,7 +2,6 @@
 /** @jsxFrag Fragment */
 import { Fragment, h } from "preact";
 import { tw } from "@twind";
-import { css } from "twind/css";
 import TechCarousel from "../components/TechCarousel.tsx";
 import GeneralLayout from "../components/layout/general_layout.tsx";
 import Link from "../components/utils/link.tsx";
@@ -19,7 +18,6 @@ const Head = () => (
       type="text/css"
       media="all"
     />
-    {/* https://fonts.googleapis.com/css?family=Josefin+Sans%3A700%2C400%2C100%7CTitillium+Web%3A400%2C700%2C400italic%2C700italic */}
   </head>
 );
 
