@@ -9,6 +9,6 @@ export async function handler(
   ctx: MiddlewareHandlerContext<State>,
 ) {
   const resp = await ctx.next();
-  resp.headers.set("cache-control", "public, max-age=31536000, immutable")
+  resp.headers.set("cache-control", "public, max-age=31536000, immutable");
   return resp;
 }
