@@ -17,9 +17,7 @@ export default function GeneralLayout(
         )}
       <div className={tw`pt-14 bg-onyx h-full min-h-screen text-white`}>
         <Navbar activePath={props.activePath} />
-        <main>
-          {props.children}
-        </main>
+        {props.children}
         <Footer />
       </div>
     </Fragment>

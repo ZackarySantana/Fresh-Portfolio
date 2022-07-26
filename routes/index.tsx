@@ -1,6 +1,6 @@
 /** @jsx h */
 /** @jsxFrag Fragment */
-import { Fragment, h } from "preact";
+import { h } from "preact";
 import { tw } from "@twind";
 import TechCarousel from "../components/TechCarousel.tsx";
 import GeneralLayout from "../components/layout/general_layout.tsx";
@@ -8,6 +8,7 @@ import Link from "../components/utils/link.tsx";
 import ExternalLink from "../components/utils/externallink.tsx";
 import ProjectCard from "../components/ProjectCard.tsx";
 import JosefinImport from "../components/utils/josefin.tsx";
+import GetProjects from "../components/GetProjects.tsx";
 
 const Head = () => (
   <head>
@@ -34,7 +35,7 @@ export default function Home() {
         <TechCarousel />
         <div className={tw`sm:w-[30rem] my-8 w-full  before:content-['hi']`}>
           <p>
-            Interested in my work? Head over to my{" "}
+            Interested in my work? Head over to{" "}
             <Link to="#projects">my projects</Link>{" "}
             to find out more. I am a passionate developer that has worked with
             many different languages and frameworks (the carousel does not
@@ -61,7 +62,7 @@ export default function Home() {
         }
 
         <div className={tw`flex flex-wrap justify-center p-5`}>
-          {getProjects().map((p) => (
+          {GetProjects().map((p) => (
             <ProjectCard
               img={"projects/" + p.img}
               imgAlt={"projects/" + p.imgAlt}
@@ -84,222 +85,4 @@ export default function Home() {
       </main>
     </GeneralLayout>
   );
-}
-
-function getProjects() {
-  return [
-    {
-      img: "UPE.webp",
-      imgAlt: "UPE.png",
-      title: "UPE",
-      techs: "Remix, React, Express",
-      desc:
-        "A site with a multi-user authentication system, metrics with Prometheus, visualization with Grafana, Prisma ORM for posts/comments, and more!",
-      sub: [
-        // [<ExternalLink to="/" className={tw`text-blue-400`}>Production</ExternalLink>],
-        ["9500+", "lines"],
-      ],
-      special: true,
-    },
-    {
-      img: "MiscProps.webp",
-      imgAlt: "MiscProps.png",
-      title: "Misc Props",
-      techs: "TypeScript, React",
-      desc:
-        "A collection of hooks, utility classes, and components that are usually targetted towards a React environment.",
-      sub: [
-        [
-          <ExternalLink
-            to="https://github.com/ZackarySantana/MiscProps"
-            className={tw`text-blue-400`}
-          >
-            Source
-          </ExternalLink>,
-        ],
-        [
-          <>
-            6<sup>+</sup>
-          </>,
-          "hooks",
-        ],
-      ],
-    },
-    {
-      img: "Todo.png",
-      imgAlt: "Todo.png",
-      title: "Todo",
-      techs: "Svelte, Firebase, Workbox",
-      desc: (
-        <>
-          This todo app is a PWA (Progressive Web App) made in{" "}
-          <span className={tw`text-orange`}>Svelte</span> using{" "}
-          <span className={tw`text-orange`}>Firebase</span> for authentication.
-        </>
-      ),
-      sub: [
-        [
-          <ExternalLink
-            to="https://github.com/ZackarySantana/To-do"
-            className={tw`text-blue-400`}
-          >
-            Source
-          </ExternalLink>,
-        ],
-        [
-          <ExternalLink
-            to="https://todo.zackaryjamessantana.com/"
-            className={tw`text-blue-400`}
-          >
-            Demo
-          </ExternalLink>,
-        ],
-      ],
-      special: true,
-    },
-    {
-      img: "Selector.webp",
-      imgAlt: "Selector.png",
-      title: "Selector",
-      techs: "Java, JavaFX, FXML",
-      desc:
-        "A MVC custom system written with JavaFX. Using it, I made a To Do application as an example usage!",
-      sub: [
-        [
-          <ExternalLink
-            to="https://github.com/ZackarySantana/Selector_java"
-            className={tw`text-blue-400`}
-          >
-            Source
-          </ExternalLink>,
-        ],
-        ["1700+", "lines"],
-      ],
-    },
-    {
-      img: "TileGame.webp",
-      imgAlt: "TileGame.png",
-      title: "Tile Game and Animal Collector",
-      techs: "React, Redux, SASS",
-      desc:
-        "The childhood classic tile matching game and a cookie clicker clone, Animal collector, made with Redux and React.",
-      sub: [
-        [
-          <ExternalLink
-            to="https://github.com/ZackarySantana/TileGame"
-            className={tw`text-blue-400`}
-          >
-            Source
-          </ExternalLink>,
-          "Tile Game",
-        ],
-        [
-          <ExternalLink
-            to="https://github.com/ZackarySantana/AnimalCollector"
-            className={tw`text-blue-400`}
-          >
-            Source
-          </ExternalLink>,
-          "Animal Collector",
-        ],
-      ],
-    },
-    {
-      img: "LinkedHub.webp",
-      imgAlt: "LinkedHub.png",
-      title: "LinkedHub",
-      techs: "JavaScript, Chrome Extension",
-      desc: (
-        <>
-          1<sup>st</sup>{" "}
-          place hackathon winner for Miami Hack Week @ Campus, adds GitHub
-          section to LinkedIn!
-        </>
-      ),
-      sub: [
-        [
-          <ExternalLink
-            to="https://github.com/ItsLaro/LinkedHub"
-            className={tw`text-blue-400`}
-          >
-            Source
-          </ExternalLink>,
-        ],
-        [
-          <ExternalLink
-            to="https://devpost.com/software/linkedhub"
-            className={tw`text-blue-400`}
-          >
-            Devpost
-          </ExternalLink>,
-        ],
-        ["3000+", "lines"],
-      ],
-      special: true,
-    },
-    {
-      img: "SpaceFrontier.webp",
-      imgAlt: "SpaceFrontier.png",
-      title: "Space Frontier",
-      techs: "Java, JavaFX, FXML",
-      desc:
-        "Space Frontier is a side scrolling Java game I made in 10th grade. It has multiple worlds and progession for enemies and players.",
-      sub: [
-        [
-          <ExternalLink
-            to="https://github.com/ZackarySantana/SpaceFrontier"
-            className={tw`text-blue-400`}
-          >
-            Source
-          </ExternalLink>,
-        ],
-        [
-          <ExternalLink
-            to="https://videos.zackaryjamessantana.com/spacefrontier/"
-            className={tw`text-blue-400`}
-          >
-            Demo
-          </ExternalLink>,
-        ],
-        ["2400+", "lines"],
-      ],
-    },
-    {
-      img: "UniBeat.webp",
-      imgAlt: "UniBeat.png",
-      title: "UniBeat",
-      techs: "Android, Firebase",
-      desc:
-        "Unibeat allows users to select a music genre and explore new songs, with a tinder-like system for music preference.",
-      sub: [
-        [
-          <ExternalLink
-            to="https://github.com/qasp-Inc/uniBeat"
-            className={tw`text-blue-400`}
-          >
-            Source
-          </ExternalLink>,
-        ],
-      ],
-    },
-    {
-      img: "Portfolio.webp",
-      imgAlt: "Portfolio.png",
-      title: "Portfolio",
-      techs: "Fresh, Preact, Twind, Fly",
-      desc:
-        "This site is a responsive open-source web application made using Preact, Twind, and Fresh. ",
-      sub: [
-        [
-          <ExternalLink
-            to="https://github.com/ZackarySantana/Portfolio"
-            className={tw`text-blue-400`}
-          >
-            Source
-          </ExternalLink>,
-        ],
-        ["1400+", "lines"],
-      ],
-    },
-  ];
 }

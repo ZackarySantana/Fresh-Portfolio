@@ -1,6 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 import GeneralLayout from "../../components/layout/general_layout.tsx";
+import { tw } from "@twind";
 
 const Head = () => (
   <head>
@@ -12,7 +13,7 @@ const Head = () => (
 export default function ProjectMainPage() {
   return (
     <GeneralLayout activePath="/projects" head={<Head />}>
-      <main>
+      <main className={tw`h-screen`}>
         <p>Hey projects</p>
       </main>
     </GeneralLayout>
