@@ -7,17 +7,13 @@ import GeneralLayout from "../components/layout/general_layout.tsx";
 import Link from "../components/utils/link.tsx";
 import ExternalLink from "../components/utils/externallink.tsx";
 import ProjectCard from "../components/ProjectCard.tsx";
+import JosefinImport from "../components/utils/josefin.tsx";
 
 const Head = () => (
   <head>
     <title>Home - Zackary's Portfolio</title>
     <meta type="description" content="Zackary Santana's custom portfolio!" />
-    <link
-      rel="stylesheet"
-      href="/josefin.css"
-      type="text/css"
-      media="all"
-    />
+    <JosefinImport />
   </head>
 );
 
@@ -98,7 +94,7 @@ function getProjects() {
       title: "UPE",
       techs: "Remix, React, Express",
       desc:
-        "A site with a multi-user authentication system, metrics with Prometheus, visualization with Grafana, Prisma ORM for posts/comments, and more! Link TBA",
+        "A site with a multi-user authentication system, metrics with Prometheus, visualization with Grafana, Prisma ORM for posts/comments, and more!",
       sub: [
         // [<ExternalLink to="/" className={tw`text-blue-400`}>Production</ExternalLink>],
         ["9500+", "lines"],

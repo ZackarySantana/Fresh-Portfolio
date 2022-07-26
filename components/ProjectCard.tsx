@@ -34,6 +34,11 @@ export default function ProjectCard(
         <h2 className={tw`mt-0 text-lg`}>{props.title}</h2>
         <p className={tw`text-sm text-gray-300`}>{props.desc}</p>
       </div>
+      <div
+        className={tw`w-full text-center text-sm text-gray-300 display-block my-2 italic`}
+      >
+        <a href={`/projects/${props.title}`}>Learn More...</a>
+      </div>
       {props.sub?.length == 1 &&
         (
           <div className={tw`grid grid-cols-1 grid-rows-1`}>

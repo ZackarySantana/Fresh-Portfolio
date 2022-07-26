@@ -11,7 +11,7 @@ export default function Navbar(props: { activePath: string }) {
         {GetLinks().map((l) => (
           <NavLink
             to={l[0]}
-            active={props.activePath.toLowerCase() === l[0]}
+            active={matchesLink(props.activePath, l[0])}
             target={NewTab().includes(l[1])}
           >
             {l[1]}
@@ -22,9 +22,17 @@ export default function Navbar(props: { activePath: string }) {
   );
 }
 
+function matchesLink(path: string, toMatch: string) {
+  if (toMatch == "/") {
+    return path === "/";
+  }
+  return path.toLowerCase().startsWith(toMatch);
+}
+
 function GetLinks() {
   return [
     ["/", "Home"],
+    ["/projects", "Projects"],
     ["https://www.linkedin.com/in/zackary-santana/", "Linkedin"],
     ["/Zackary_Santana_Resume.pdf", "Resume"],
   ];
