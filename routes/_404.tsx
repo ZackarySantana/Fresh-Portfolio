@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <GeneralLayout activePath="/404" head={<Head />}>
       <main
-        className={tw`pt-10 px-10 flex flex-col items-center justify-center text-center h-[60vh]`}
+        className={tw`pt-10 px-10 flex flex-col items-center justify-center text-center h-[85vh]`}
       >
         <h1
           className={tw`sm:text-[5rem] text-[3rem] font-thin uppercase font-josefin`}
