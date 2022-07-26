@@ -1,10 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import GitHubIcon from "../../icons/github.tsx";
 import ExternalLink from "../../utils/externallink.tsx";
-import EmailIcon from "../../icons/email.tsx";
-import LinkedinIcon from "../../icons/linkedin.tsx";
 
 export default function Footer() {
   return (
@@ -13,13 +10,20 @@ export default function Footer() {
       <div className={tw`w-full flex flex-col items-center`}>
         <div className={tw`flex justify-evenly py-5 w-[200px]`}>
           <ExternalLink to="https://github.com/ZackarySantana">
-            <GitHubIcon className={tw`w-[25px] h-[25px] hover:animate-shake`} />
+            <img
+              src="/icons/github.svg"
+              className={tw`w-[25px] h-[25px] hover:animate-shake`}
+            />
           </ExternalLink>
           <ExternalLink to="mailto: zackzackyack@gmail.com">
-            <EmailIcon className={tw`w-[25px] h-[25px] hover:animate-shake`} />
+            <img
+              src="/icons/email.svg"
+              className={tw`w-[25px] h-[25px] hover:animate-shake`}
+            />
           </ExternalLink>
           <ExternalLink to="https://www.linkedin.com/in/zackary-santana/">
-            <LinkedinIcon
+            <img
+              src="/icons/linkedin.svg"
               className={tw`w-[25px] h-[25px] hover:animate-shake`}
             />
           </ExternalLink>

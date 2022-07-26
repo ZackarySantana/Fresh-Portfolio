@@ -2,13 +2,13 @@
 /** @jsxFrag Fragment */
 import { h } from "preact";
 import { tw } from "@twind";
-import TechCarousel from "../components/TechCarousel.tsx";
+import JosefinImport from "../components/utils/josefin.tsx";
 import GeneralLayout from "../components/layout/general_layout.tsx";
+import ProjectCard from "../components/ProjectCard.tsx";
+import GetProjects from "../components/GetProjects.tsx";
+import TechCarousel from "../components/TechCarousel.tsx";
 import Link from "../components/utils/link.tsx";
 import ExternalLink from "../components/utils/externallink.tsx";
-import ProjectCard from "../components/ProjectCard.tsx";
-import JosefinImport from "../components/utils/josefin.tsx";
-import GetProjects from "../components/GetProjects.tsx";
 
 const Head = () => (
   <head>
@@ -50,17 +50,6 @@ export default function Home() {
         </div>
         <div id="projects" className={tw`translate-y-[-55px]`}></div>
         <h1 className={tw`text-[2rem]`}>Projects</h1>
-
-        {
-          /* <label for="red-toggle" class={tw`inline-flex relative items-center mr-5 cursor-pointer`}>
-                    <input type="checkbox" value="" id="red-toggle" class={tw`sr-only peer`} checked />
-                    <div class={tw`w-11 h-6 bg-gray-600 rounded-full after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all ${css({
-                        '&::after': { content: '""' },
-                    })}`}></div>
-                    <span class={tw`ml-3 text-sm font-medium text-gray-900 dark:text-gray-300`}>Red</span>
-                </label> */
-        }
-
         <div className={tw`flex flex-wrap justify-center p-5`}>
           {GetProjects().map((p) => (
             <ProjectCard
@@ -74,14 +63,6 @@ export default function Home() {
             />
           ))}
         </div>
-        {
-          /* <h1 className={tw`text-[2rem]`}>Plugins</h1>
-                <div className={tw`flex flex-wrap justify-center p-5`}>
-                    {getProjects().map(p => (
-                        <ProjectCard img={"projects/" + p.img} imgAlt={"projects/" + p.imgAlt} title={p.title} techs={p.techs} desc={p.desc} sub={p.sub} special={p.special} />
-                    ))}
-                </div> */
-        }
       </main>
     </GeneralLayout>
   );

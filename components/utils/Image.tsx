@@ -17,7 +17,7 @@ export default function Image(
       <source srcSet={asset(props.src)} type="image/webp" />
       <source srcSet={asset(props.srcAlt)} type="image/jpeg" />
       <img
-        loading={props.loading}
+        loading={props.loading ?? "lazy"}
         src={props.srcAlt}
         alt={props.alt}
         id={props.id}
