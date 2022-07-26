@@ -2,11 +2,13 @@
 import { h } from "preact";
 import GeneralLayout from "../../components/layout/general_layout.tsx";
 import { tw } from "@twind";
+import JosefinImport from "../../components/utils/josefin.tsx";
 
 const Head = () => (
   <head>
     <title>Projects - Zackary's Portfolio</title>
     <meta type="description" content="Zackary Santana's custom portfolio!" />
+    <JosefinImport />
   </head>
 );
 
