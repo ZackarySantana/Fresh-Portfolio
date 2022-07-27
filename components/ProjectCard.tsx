@@ -17,12 +17,10 @@ export default function ProjectCard(
 ) {
   return (
     <div
-      className={tw`rounded-2xl bg-dark text-center shadow-2xl w-[250px] m-5 relative ${
-        props.special ? (RGB() + " after:animate-rgb") : ""
-      }`}
+      className={tw`rounded-2xl bg-dark text-center shadow-2xl w-[250px] m-5 relative ${props.special ? (RGB() + " after:animate-rgb") : ""
+        }`}
       style={"transform-style: preserve-3d;"}
     >
-      {/* <img src={props.img} className={tw`rounded-tr-2xl rounded-tl-2xl w-full h-[150px]`} /> */}
       <Image
         src={props.img}
         srcAlt={props.imgAlt}
@@ -100,7 +98,7 @@ function RGB() {
     `);
 }
 
-function SubInfo(props: { upper: VNode | string; lower?: VNode | string }) {
+function SubInfo(props: { upper: VNode | string; lower?: VNode | string; }) {
   return (
     <div class={tw`flex justify-center items-center flex-col p-2.5`}>
       <div className={tw`block text-lg`}>

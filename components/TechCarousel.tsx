@@ -1,5 +1,5 @@
 /** @jsx h */
-import { h, VNode } from "preact";
+import { h } from "preact";
 import { tw } from "@twind";
 import ExternalLink from "./utils/externallink.tsx";
 
@@ -99,12 +99,12 @@ export default function TechCarousel() {
         num={14}
         icon="nodejs"
       />
-      {/* PWA */}
+      {/* PWA, Strapi, Golang, Splunk, Python, Streamlit */}
     </div>
   );
 }
 
-function CarouselImage(props: { to: string; icon: string; num: number }) {
+function CarouselImage(props: { to: string; icon: string; num: number; }) {
   return (
     <ExternalLink
       to={props.to}

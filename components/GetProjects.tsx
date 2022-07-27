@@ -81,6 +81,34 @@ export default function GetProjects() {
       special: true,
     },
     {
+      img: "Twitter.webp",
+      imgAlt: "Twitter.png",
+      title: "Twitter Filter",
+      techs: "Python, Streamlit, Data Science",
+      desc:
+        "A Python web app that reads from the twitter API and displays data about your search.",
+      extended_desc:
+        "The main focus of this Python web app is to provide a simple and elegant user interface for users to perform simple filter options on their search.",
+      sub: [
+        [
+          <ExternalLink
+            to="https://github.com/ZackarySantana/TwitterFilter"
+            className={tw`text-blue-400`}
+          >
+            Source
+          </ExternalLink>,
+        ],
+        [
+          <ExternalLink
+            to="https://twitterst.fly.dev/"
+            className={tw`text-blue-400`}
+          >
+            Demo
+          </ExternalLink>,
+        ],
+      ],
+    },
+    {
       img: "Selector.webp",
       imgAlt: "Selector.png",
       title: "Selector",
