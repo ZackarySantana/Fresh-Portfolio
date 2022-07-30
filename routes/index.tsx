@@ -53,8 +53,8 @@ export default function Home() {
         <div className={tw`flex flex-wrap justify-center p-5`}>
           {GetProjects().map((p) => (
             <ProjectCard
-              img={"projects/" + p.img}
-              imgAlt={"projects/" + p.imgAlt}
+              img={"techs/" + p.img}
+              imgAlt={"techs/" + p.imgAlt}
               title={p.title}
               techs={p.techs}
               desc={p.desc}
