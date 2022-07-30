@@ -26,6 +26,7 @@ export default function App(props: AppProps) {
         <link rel="manifest" href="/manifest.json" />
 
         {/* Images */}
+        <link rel="icon" type="image/ico" href="/favicon/favicon.ico" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
