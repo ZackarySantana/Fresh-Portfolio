@@ -29,6 +29,7 @@ export default function GetProjects() {
         "A simple RPG game with collisions, enemies (and their AI's), animations, and more!",
       extended_desc: "",
       sub: [
+        [<ExternalLink to="https://github.com/ZackarySantana/RPG" className={tw`text-blue-400`}>Source</ExternalLink>],
         [<ExternalLink to="https://zackaryjamessantana.com/hosted_projects/rpg.html" className={tw`text-blue-400`}>Demo</ExternalLink>],
       ],
       special: true,
