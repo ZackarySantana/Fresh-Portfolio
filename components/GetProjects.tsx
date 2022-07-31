@@ -21,6 +21,19 @@ export default function GetProjects() {
       special: true,
     },
     {
+      img: "RPG.webp",
+      imgAlt: "RPG.png",
+      title: "RPG",
+      techs: "Godot",
+      desc:
+        "A simple RPG game with collisions, enemies (and their AI's), animations, and more!",
+      extended_desc: "",
+      sub: [
+        [<ExternalLink to="https://zackaryjamessantana.com/hosted_projects/rpg.html" className={tw`text-blue-400`}>Demo</ExternalLink>],
+      ],
+      special: true,
+    },
+    {
       img: "MiscProps.webp",
       imgAlt: "MiscProps.png",
       title: "Misc Props",
