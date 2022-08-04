@@ -4,7 +4,7 @@ import GeneralLayout from "./general_layout.tsx";
 import { tw } from "@twind";
 import JosefinImport from "../utils/josefin.tsx";
 
-const Head = (props: { code: number; }) => (
+const Head = (props: { code: string | number; }) => (
     <head>
         <title>{props.code} - Zackary's Portfolio</title>
         <meta type="description" content="Zackary Santana's custom portfolio!" />
@@ -12,9 +12,9 @@ const Head = (props: { code: number; }) => (
     </head>
 );
 
-export default function Code(props: { code: number; children: VNode; }) {
+export default function Code(props: { code: number; title?: string; children: VNode; }) {
     return (
-        <GeneralLayout activePath={`/${props.code}`} head={<Head code={props.code} />}>
+        <GeneralLayout activePath={`/${props.title || props.code}`} head={<Head code={props.title || props.code} />}>
             <main
                 className={tw`pt-10 px-10 flex flex-col items-center justify-center text-center h-[85vh]`}
             >

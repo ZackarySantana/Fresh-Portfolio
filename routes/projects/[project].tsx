@@ -18,7 +18,6 @@ const Head = (props: { projectName: string; }) => (
 
 export default function ProjectPage(props: PageProps) {
   const project = GetProject(decodeURI(props.params.project));
-  console.log(project);
   return (
     <>
       {project &&
@@ -35,7 +34,7 @@ export default function ProjectPage(props: PageProps) {
               418
             </h1>
             <p className={tw`my-6 font-josefin tracking-[0.125em]`}>
-              <span className={tw`text-green`}>{project}</span>{" "}
+              <span className={tw`text-green`}>{project.title}</span>{" "}
               page is under development! Click{" "}
               <a href="/" className={tw`text-blue-400`}>here</a> to go home
             </p>
