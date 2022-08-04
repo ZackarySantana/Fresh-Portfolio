@@ -5,7 +5,7 @@ import { tw } from "@twind";
 import JosefinImport from "../components/utils/josefin.tsx";
 import GeneralLayout from "../components/layout/general_layout.tsx";
 import ProjectCard from "../components/ProjectCard.tsx";
-import GetProjects from "../components/GetProjects.tsx";
+import GetProjects from "../components/ProjectInfo.tsx";
 import TechCarousel from "../components/TechCarousel.tsx";
 import Link from "../components/utils/link.tsx";
 import ExternalLink from "../components/utils/externallink.tsx";

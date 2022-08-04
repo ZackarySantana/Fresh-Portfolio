@@ -104,7 +104,7 @@ export default function TechCarousel() {
   );
 }
 
-function CarouselImage(props: { to: string; icon: string; num: number; }) {
+function CarouselImage(props: { to: string; icon: string; num: number }) {
   return (
     <ExternalLink
       to={props.to}

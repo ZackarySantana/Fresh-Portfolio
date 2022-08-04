@@ -1,11 +1,27 @@
 /** @jsx h */
 /** @jsxFrag Fragment */
-import { Fragment, h } from "preact";
+import { Fragment, h, VNode } from "preact";
 import { tw } from "@twind";
 import ExternalLink from "./utils/externallink.tsx";
 
-export default function GetProjects() {
-  return [
+type Project = {
+  img: string;
+  imgAlt: string;
+  title: string;
+  techs: string;
+  desc: VNode | string;
+  extended_desc: string;
+  sub?: (VNode | string)[][];
+  special?: boolean;
+};
+
+let projects = [] as Project[];
+
+const makeProjects = () => {
+  if (projects.length !== 0) {
+    return;
+  }
+  projects = [
     {
       img: "UPE.webp",
       imgAlt: "UPE.png",
@@ -27,10 +43,25 @@ export default function GetProjects() {
       techs: "Godot",
       desc:
         "A exciting and fun RPG game with collisions, enemies (and their AI's), animations, and more!",
-      extended_desc: "An RPG game with different attacks, different enemies, different AI's, many animations, innovative worlds, and some store telling elements!",
+      extended_desc:
+        "An RPG game with different attacks, different enemies, different AI's, many animations, innovative worlds, and some store telling elements!",
       sub: [
-        [<ExternalLink to="https://github.com/ZackarySantana/RPG" className={tw`text-blue-400`}>Source</ExternalLink>],
-        [<ExternalLink to="https://zackaryjamessantana.com/hosted_projects/rpg.html" className={tw`text-blue-400`}>Demo</ExternalLink>],
+        [
+          <ExternalLink
+            to="https://github.com/ZackarySantana/RPG"
+            className={tw`text-blue-400`}
+          >
+            Source
+          </ExternalLink>,
+        ],
+        [
+          <ExternalLink
+            to="https://zackaryjamessantana.com/hosted_projects/rpg.html"
+            className={tw`text-blue-400`}
+          >
+            Demo
+          </ExternalLink>,
+        ],
       ],
       special: true,
     },
@@ -279,4 +310,16 @@ export default function GetProjects() {
       ],
     },
   ];
+};
+
+export function GetProject(projcetName: string) {
+  makeProjects();
+  return projects.find((p) => {
+    return p.title.toLowerCase() == projcetName.toLowerCase();
+  });
+}
+
+export default function GetProjects() {
+  makeProjects();
+  return projects;
 }
