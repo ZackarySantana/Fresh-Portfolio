@@ -33,8 +33,8 @@ export default function ProjectPage(props: PageProps) {
             >
               418
             </h1>
-            <p className={tw`my-6 font-josefin tracking-[0.125em]`}>
-              <span className={tw`text-green`}>{project.title}</span>{" "}
+            <p className={tw`my-6 tracking-[0.125em] font-thin`}>
+              <span className={tw`text-red-500 font-medium`}>{project.title}'s</span>{" "}
               page is under development! Click{" "}
               <a href="/" className={tw`text-blue-400`}>here</a> to go home
             </p>

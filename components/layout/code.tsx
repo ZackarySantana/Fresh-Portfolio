@@ -23,7 +23,7 @@ export default function Code(props: { code: number; title?: string; children: VN
                 >
                     {props.code}
                 </h1>
-                <p className={tw`my-6 font-josefin tracking-[0.125em]`}>
+                <p className={tw`my-6 tracking-[0.125em] font-thin`}>
                     {props.children}
                 </p>
             </main>
