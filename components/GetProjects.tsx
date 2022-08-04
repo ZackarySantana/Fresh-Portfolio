@@ -26,8 +26,8 @@ export default function GetProjects() {
       title: "RPG",
       techs: "Godot",
       desc:
-        "A simple RPG game with collisions, enemies (and their AI's), animations, and more!",
-      extended_desc: "",
+        "A exciting and fun RPG game with collisions, enemies (and their AI's), animations, and more!",
+      extended_desc: "An RPG game with different attacks, different enemies, different AI's, many animations, innovative worlds, and some store telling elements!",
       sub: [
         [<ExternalLink to="https://github.com/ZackarySantana/RPG" className={tw`text-blue-400`}>Source</ExternalLink>],
         [<ExternalLink to="https://zackaryjamessantana.com/hosted_projects/rpg.html" className={tw`text-blue-400`}>Demo</ExternalLink>],
