@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN deno cache main.ts
+RUN deno cache main.ts --import-map=import_map.json
 
 ENV DENO_DEPLOYMENT_ID="1"
 
