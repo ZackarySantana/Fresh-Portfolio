@@ -2,18 +2,19 @@
 /** @jsxFrag Fragment */
 import { h, Fragment } from "preact";
 import { PageProps } from "$fresh/server.ts";
+import { Head } from "$fresh/runtime.ts";
 import GeneralLayout from "../../components/layout/general_layout.tsx";
 import { tw } from "@twind";
 import JosefinImport from "../../components/utils/josefin.tsx";
 import { GetProject } from "../../components/ProjectInfo.tsx";
 import Code from "../../components/layout/code.tsx";
 
-const Head = (props: { projectName: string; }) => (
-  <head>
+const HeadWrap = (props: { projectName: string; }) => (
+  <Head>
     <title>{props.projectName} - Zackary's Portfolio</title>
     <meta type="description" content="Zackary Santana's custom portfolio!" />
     <JosefinImport />
-  </head>
+  </Head>
 );
 
 export default function ProjectPage(props: PageProps) {
@@ -23,7 +24,7 @@ export default function ProjectPage(props: PageProps) {
       {project &&
         <GeneralLayout
           activePath={`/projects/${project.title}`}
-          head={<Head projectName={project.title} />}
+          head={<HeadWrap projectName={project.title} />}
         >
           <main
             className={tw`pt-10 px-10 flex flex-col items-center justify-center text-center h-[85vh]`}

@@ -2,6 +2,7 @@
 /** @jsxFrag Fragment */
 import { h } from "preact";
 import { tw } from "@twind";
+import { Head } from "$fresh/runtime.ts";
 import JosefinImport from "../components/utils/josefin.tsx";
 import GeneralLayout from "../components/layout/general_layout.tsx";
 import ProjectCard from "../components/ProjectCard.tsx";
@@ -10,17 +11,17 @@ import TechCarousel from "../components/TechCarousel.tsx";
 import Link from "../components/utils/link.tsx";
 import ExternalLink from "../components/utils/externallink.tsx";
 
-const Head = () => (
-  <head>
+const HeadWrap = () => (
+  <Head>
     <title>Home - Zackary's Portfolio</title>
     <meta type="description" content="Zackary Santana's custom portfolio!" />
     <JosefinImport />
-  </head>
+  </Head>
 );
 
 export default function Home() {
   return (
-    <GeneralLayout activePath="/" head={<Head />}>
+    <GeneralLayout activePath="/" head={<HeadWrap />}>
       <main className={tw`pt-10 px-10 flex flex-col items-center text-center`}>
         <h1
           className={tw`sm:text-[5rem] text-[3rem] font-thin uppercase font-josefin`}

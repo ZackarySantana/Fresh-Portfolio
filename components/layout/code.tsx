@@ -1,20 +1,21 @@
 /** @jsx h */
 import { h, VNode } from "preact";
-import GeneralLayout from "./general_layout.tsx";
 import { tw } from "@twind";
+import { Head } from "$fresh/runtime.ts";
+import GeneralLayout from "./general_layout.tsx";
 import JosefinImport from "../utils/josefin.tsx";
 
-const Head = (props: { code: string | number; }) => (
-    <head>
+const HeadWrap = (props: { code: string | number; }) => (
+    <Head>
         <title>{props.code} - Zackary's Portfolio</title>
         <meta type="description" content="Zackary Santana's custom portfolio!" />
         <JosefinImport />
-    </head>
+    </Head>
 );
 
 export default function Code(props: { code: number; title?: string; children: VNode; }) {
     return (
-        <GeneralLayout activePath={`/${props.title || props.code}`} head={<Head code={props.title || props.code} />}>
+        <GeneralLayout activePath={`/${props.title || props.code}`} head={<HeadWrap code={props.title || props.code} />}>
             <main
                 className={tw`pt-10 px-10 flex flex-col items-center justify-center text-center h-[85vh]`}
             >
