@@ -57,6 +57,7 @@ export default function Home() {
               img={"/projects/" + p.img}
               imgAlt={"/projects/" + p.imgAlt}
               title={p.title}
+              titleNode={p.titleNode}
               techs={p.techs}
               desc={p.desc}
               sub={p.sub}

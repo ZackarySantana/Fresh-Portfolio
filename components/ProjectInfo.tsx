@@ -8,7 +8,8 @@ type Project = {
   img: string;
   imgAlt: string;
   title: string;
-  techs: string;
+  titleNode?: VNode;
+  techs: string; // 250 x 150
   desc: VNode | string;
   extended_desc: string;
   sub?: (VNode | string)[][];
@@ -33,6 +34,35 @@ const makeProjects = () => {
       sub: [
         // [<ExternalLink to="/" className={tw`text-blue-400`}>Production</ExternalLink>],
         ["9500+", "lines"],
+      ],
+      special: true,
+    },
+    {
+      img: "Attach.webp",
+      imgAlt: "Attach.png",
+      title: "|attach|",
+      titleNode: <span class={tw`font-mono`}>|attach|</span>,
+      techs: "Solid.js, Vite, Express.js",
+      desc:
+        "A contact sharing website that anyone can fork and customize for their own. Fork this project and set up your own! View my demo below",
+      extended_desc: "",
+      sub: [
+        [
+          <ExternalLink
+            to="https://github.com/ZackarySantana/Attach"
+            className={tw`text-blue-400`}
+          >
+            Source
+          </ExternalLink>,
+        ],
+        [
+          <ExternalLink
+            to="https://attach.fly.dev/?theme=Light%20Fire"
+            className={tw`text-blue-400`}
+          >
+            Demo
+          </ExternalLink>,
+        ],
       ],
       special: true,
     },

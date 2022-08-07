@@ -99,12 +99,12 @@ export default function TechCarousel() {
         num={14}
         icon="nodejs"
       />
-      {/* PWA, Strapi, Golang, Splunk, Python, Streamlit */}
+      {/* PWA, Strapi, Golang, Splunk, Python, Streamlit, Solid.js, Vite */}
     </div>
   );
 }
 
-function CarouselImage(props: { to: string; icon: string; num: number }) {
+function CarouselImage(props: { to: string; icon: string; num: number; }) {
   return (
     <ExternalLink
       to={props.to}
