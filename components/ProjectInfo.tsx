@@ -41,7 +41,7 @@ const makeProjects = () => {
       img: "Attach.webp",
       imgAlt: "Attach.png",
       title: "|attach|",
-      titleNode: <span class={tw`font-mono`}>|attach|</span>,
+      titleNode: <span className={tw`font-mono`}>|attach|</span>,
       techs: "Solid.js, Vite, Express.js",
       desc:
         "A contact sharing website that anyone can fork and customize for their own. Fork this project and set up your own! View my demo below",

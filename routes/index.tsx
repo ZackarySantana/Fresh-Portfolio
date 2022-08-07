@@ -64,6 +64,7 @@ export default function Home() {
               special={p.special}
             />
           ))}
+          <span className={tw`font-mono`}></span>
         </div>
       </main>
     </GeneralLayout>
