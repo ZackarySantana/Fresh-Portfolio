@@ -21,35 +21,45 @@ export const config: Configuration = {
         josefin: '"Josefin Sans",sans-serif',
       },
       animation: {
-        "across-screen": "across-screen 30s linear infinite",
-        "across-small-screen": "across-small-screen 30s linear infinite",
+        "across-screen": "across-screen 46s linear infinite",
+        "across-small-screen": "across-small-screen 46s linear infinite",
         twind: "twind 3s linear infinite",
         rgb: "rgb 6s linear infinite",
         shake: "shake 0.5s",
       },
       keyframes: {
-        "across-screen": {
+        "across-md-screen": {
           "0%": { opacity: "0" },
-          "40%": { opacity: "1" },
-          "80%": {
+          "25%": { opacity: "1" },
+          "65%": {
             opacity: "0",
             transform: "translate(calc(-100vw + 7.5rem + 75px), 0)",
             pointerEvents: "unset",
           },
-          "81%": { pointerEvents: "none" },
+          "66%": { pointerEvents: "none" },
+        },
+        "across-screen": {
+          "0%": { opacity: "0" },
+          "25%": { opacity: "1" },
+          "45%": {
+            opacity: "0",
+            transform: "translate(calc(-100vw + 7.5rem + 75px), 0)",
+            pointerEvents: "unset",
+          },
+          "46%": { pointerEvents: "none" },
         },
         "across-small-screen": {
           "0%": {
             opacity: "0",
             transform: "translate(calc(2.4rem), 0)",
           },
-          "25%": { opacity: "1" },
-          "50%": {
+          "5%": { opacity: "1" },
+          "20%": {
             opacity: "0",
             transform: "translate(calc(-100vw + 4.8rem + 20px), 0)",
             pointerEvents: "unset",
           },
-          "51%": { pointerEvents: "none" },
+          "21%": { pointerEvents: "none" },
         },
         rgb: {
           "0%": { backgroundPosition: "0% 50%" },
