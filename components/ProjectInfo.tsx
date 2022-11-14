@@ -32,7 +32,11 @@ const makeProjects = () => {
         "A site with a multi-user authentication system, metrics with Prometheus, visualization with Grafana, Prisma ORM for posts/comments, and more!",
       extended_desc: "",
       sub: [
-        // [<ExternalLink to="/" className={tw`text-blue-400`}>Production</ExternalLink>],
+        [
+          <ExternalLink to="https://upefiu.io/" className={tw`text-blue-400`}>
+            Production
+          </ExternalLink>,
+        ],
         ["9500+", "lines"],
       ],
       special: true,
@@ -63,6 +67,27 @@ const makeProjects = () => {
             Demo
           </ExternalLink>,
         ],
+      ],
+      special: true,
+    },
+    {
+      img: "CodeConstants.png",
+      imgAlt: "CodeConstants.png",
+      title: "CodeConstants",
+      techs: "Remix, React, Tailwind",
+      desc:
+        "A fast site that allows you to connect with your team members, event attendees, or anyone you want!",
+      extended_desc: "",
+      sub: [
+        [
+          <ExternalLink
+            to="https://codeconstants.com/"
+            className={tw`text-blue-400`}
+          >
+            Production
+          </ExternalLink>,
+        ],
+        ["3+", "sub-apps"],
       ],
       special: true,
     },
