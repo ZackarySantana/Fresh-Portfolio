@@ -103,9 +103,9 @@ No need to try installing these, these are installed automatically when running 
 -   [Fresh](https://fresh.deno.dev/) - Main Framework
 -   [TypeScript](https://www.typescriptlang.org/docs/) - Main language
 -   [Twind](https://twind.dev/) - Used in all components
- -   [Tailwind](https://tailwindcss.com/) - What Twind compiles down to
+    -   [Tailwind](https://tailwindcss.com/) - What Twind compiles down to
 -   [Preact.js](https://preactjs.com/) - Used in all components
- -   [React.js](https://reactjs.org/) - Preact.js tries to be a 'minified' version of React.js
+    -   [React.js](https://reactjs.org/) - Preact.js tries to be a 'minified' version of React.js
 
 ### Backend:
 
